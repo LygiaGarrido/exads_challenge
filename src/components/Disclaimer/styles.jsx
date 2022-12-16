@@ -16,7 +16,11 @@ const DisclaimerText = styled.p`
   text-align: center;
   color: #a9a9a9;
   padding-right: 20px;
-  cursor: pointer;
+
+  &:hover{
+    cursor: pointer;
+  }
+  
 `;
 
 export { DisclaimerContainer, DisclaimerText };
