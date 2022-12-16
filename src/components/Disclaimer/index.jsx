@@ -1,15 +1,14 @@
 import { DisclaimerContainer, DisclaimerText } from "./styles";
 
-function Disclaimers(props){
-    const {text1, text2} = props;
+function Disclaimers(props) {
+  const { textPrivacy, textTerms } = props;
 
-
-    return(
-        <DisclaimerContainer>
-            <DisclaimerText>{text1}</DisclaimerText>
-            <DisclaimerText>{text2}</DisclaimerText>
-        </DisclaimerContainer>
-    )
+  return (
+    <DisclaimerContainer>
+      <DisclaimerText>{textPrivacy}</DisclaimerText>
+      <DisclaimerText>{textTerms}</DisclaimerText>
+    </DisclaimerContainer>
+  );
 }
 
-export {Disclaimers};
+export { Disclaimers };

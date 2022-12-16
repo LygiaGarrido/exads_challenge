@@ -10,7 +10,7 @@ function App(){
     return(<>
     <Background/>
     <Logo text="Your Logo"/>
-    <Disclaimers text1={"Privacy Policy"} text2={"Terms of Use"}/>
+    <Disclaimers textPrivacy={"Privacy Policy"} textTerms={"Terms of Use"}/>
     
     
     </> )
