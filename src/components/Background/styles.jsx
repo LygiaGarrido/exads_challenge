@@ -4,16 +4,15 @@ import backgroundImage from "../../images/movies-BG.png"
 
 
 const Background = styled.div`
-background-image: url(${backgroundImage});
+background-image: linear-gradient(rgba(0,0,0,0.7) 100%, rgba(225,225,225, 0.3) 100%), url(${backgroundImage});
 overflow: hidden;
 background-size: cover;
-position: absolute;
-width: 100%;
-height: 100%;
-background-color: #000;
-opacity: 0.8;
-
-
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
 
 `
 export {Background}
