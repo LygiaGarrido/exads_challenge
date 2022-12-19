@@ -1,30 +1,23 @@
 import styled from "styled-components";
 
 const QuestionContainer = styled.div`
-  position: absolute;
-  left: calc(50% - 480px / 2);
-  top: 134px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
-  border: 1px solid yellowgreen;
-
-
-  
+  margin-top: 40px;
+  width: 600px;
 `;
 
 const QuestionBoxContainer = styled.div`
-
-width: 220px;
-height: 100px;
-background-color: #fff;
-display: flex;
-justify-content: space-around;
-align-items: center;
-flex-direction: column;
-border-radius: 8px;
+  width: 220px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
 `;
 
 const QuestionBoxText = styled.p`
@@ -37,13 +30,10 @@ const QuestionBoxText = styled.p`
 `;
 
 const QuestionCounterContainer = styled.div`
-
-display: flex;
-justify-content: space-between;
-width: 50%;
-
-`
-
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+`;
 
 const QuestionCounter = styled.div`
   width: 18px;
@@ -51,19 +41,25 @@ const QuestionCounter = styled.div`
   border-radius: 50%;
   border: 1.5px solid #22daa8;
   margin: 5px;
-   
+  background-color: ${(props) => (props.status === true ? "#22daa8" : "#fff")};
 `;
 
-
 const QuestionText = styled.h2`
-position: relative;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 34px;
-line-height: 40px;
-text-align: center;
-color: #FFFFFF;
-margin-top: 32px;
-`
-export { QuestionContainer,QuestionBoxContainer, QuestionBoxText, QuestionCounter, QuestionCounterContainer, QuestionText };
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 32px;
+`;
+export {
+  QuestionContainer,
+  QuestionBoxContainer,
+  QuestionBoxText,
+  QuestionCounter,
+  QuestionCounterContainer,
+  QuestionText,
+};
