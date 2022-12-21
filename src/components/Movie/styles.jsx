@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import batman from "../../images/movies/batman.png"
-
 
 const MovieContainer = styled.div`
 display: flex;
@@ -12,13 +10,16 @@ align-self: center;
 margin-top:100px;
 `
 
-const MovieCover = styled.div`
-background-image: url(${batman});
+const MovieImage = styled.div`
+background-image: url(${props => props.imageUrl});
 width: 220px;
 border-radius: 4px;
+background-size: cover;
+transition: transform .2s;
 
 &:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 `
-export {MovieContainer, MovieCover};
+export {MovieContainer, MovieImage};

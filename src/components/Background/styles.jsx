@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImage from "../../images/movies-BG.png"
+import backgroundImage from "../../public/images/movies-BG.png"
 
 
 
