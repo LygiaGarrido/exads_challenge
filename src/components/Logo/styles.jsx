@@ -3,12 +3,15 @@ import styled from "styled-components";
 const LogoContainer = styled.div`
 display: flex;
 padding: 12px 20px;
-gap: 10px;
 margin-top: 40px;
 width: 200px;
 background: rgba(0, 0, 0, 0.6);
 border: 2px solid rgba(199, 44, 60, 0.5);
 border-radius: 4px;
+
+@media (max-width: 1064px){
+    margin-top: 20px;
+}
 
 `
 

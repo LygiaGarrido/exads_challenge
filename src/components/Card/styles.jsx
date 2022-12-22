@@ -13,6 +13,10 @@ const CardContainer = styled.div`
   background-color: #fff;
   padding: 2%;
   margin-top:150px;
+
+  @media (max-width: 850px){
+    width: 85%;
+    }
 `;
 
 const Title = styled.h1`
@@ -24,6 +28,11 @@ text-align: center;
 text-transform: uppercase;
 color: #22DAA8;
 margin-top:10px;
+
+@media (max-width: 850px){
+font-size:18px;
+line-height: 20px;
+}
 `
 
 const CardText = styled.h2`
@@ -35,6 +44,11 @@ text-align: center;
 color: #081F44;
 margin-top: 15px;
 padding: 10px;
+@media (max-width: 850px){
+  font-size:16px;
+  line-height: 18px;
+  }
+
 `
 
 const CTAButton = styled.a`
@@ -62,6 +76,11 @@ margin-top:20px;
     cursor: pointer;
     background-color:#d44d2d;
 }
+
+@media (max-width: 850px){
+  font-size:18px;
+ 
+  }
 `
 
 export {CardContainer, Title, CardText, CTAButton}

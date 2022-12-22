@@ -7,6 +7,11 @@ const QuestionContainer = styled.div`
   align-items: center;
   margin-top: 40px;
   width: 600px;
+
+
+  @media (max-width: 1064px){
+    margin-top: 20px;
+  }
 `;
 
 const QuestionBoxContainer = styled.div`
@@ -47,13 +52,18 @@ const QuestionCounter = styled.div`
 const QuestionText = styled.h2`
   position: relative;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 600;
   font-size: 34px;
   line-height: 40px;
   text-align: center;
   color: #ffffff;
   margin-top: 32px;
+
+  {
+    font-size: 24px;
+    line-height:20px;
+    margin-top: 20px;
+  }
 `;
 export {
   QuestionContainer,
