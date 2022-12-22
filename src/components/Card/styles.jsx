@@ -74,7 +74,7 @@ margin-top:20px;
 
 &:hover{
     cursor: pointer;
-    background-color:#d44d2d;
+    background-color:#FA4616;
 }
 
 @media (max-width: 850px){

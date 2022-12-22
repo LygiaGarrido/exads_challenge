@@ -26,14 +26,14 @@ const MovieContainer = styled.div`
 
 const MovieImage = styled.div`
   background-image: url(${(props) => props.imageUrl});
-  width: 220px;
-  border-radius: 4px;
+  width: 210px;
+  border-radius: 6px;
   background-size: cover;
-  transition: transform 0.2s;
+
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    background-image: linear-gradient(rgba(225,225,225,0.3) 70%, rgba(0,0,0, 0.7) 100%),url(${(props) => props.imageUrl});
   }
 
   @media (max-width: 1064px){
